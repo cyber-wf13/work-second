@@ -1,3 +1,342 @@
-@media (max-width:1200px){
+@media (max-width: 1200px){
+  .header{
+    &__managebox {
+      right: 35px;
+    }
+    &__wrapper {
+      left: 40px;
+      width: 40px;
+      img{
+        height: 40px;
+        width: 100%;
+      }
+    }
+    &__contactbox{
+      &::before{
+        bottom: 25%;
+      }
+    }
+  }
+  .phone-number {
+    height: auto;
+    padding-right: 15px;
+  }
+  .menu{
+    &__btn{
+      right: 35px;
+    }
+    &__list{
+      font-size: 20px;
+      margin: 35px auto 0;
+    }
+  }
+  .card {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 2.16%;
 
+    &__title {
+      // 233px
+      width: auto;
+      padding: 20px 0px 0px;
+      height: 105px;
+      font-size: 35px;
+      line-height: 0.8em;
+    }
+    &__text {
+      width: 85.5%;
+      font-size: 20px;
+      line-height: 0.9em;
+    }
+    &__link {
+      margin: 12% 0% 12% 16.25%;
+    }
+  }
+}
+@media (max-width: 992px){
+  .header{
+    &__managebox {
+      right: 35px;
+    }
+    &__wrapper {
+      left: 25px;
+      width: 35px;
+      img{
+        height: 35px;
+        width: 100%;
+      }
+    }
+    &__contactbox{
+      &::before{
+        bottom: 25%;
+      }
+    }
+  }
+  .phone-number {
+    height: auto;
+    font-size: 22px;
+    line-height: 1em;
+    padding-right: 15px;
+  }
+  .languages{
+    bottom: -40px;
+    height: 36px;
+    &__item{
+      font-size: 16px;
+    }
+  }
+  .menu{
+    width: 100%;
+    &__btn{
+      right: 35px;
+    }
+    &__list{
+      font-size: 20px;
+      margin: 35px auto 0;
+    }
+  }
+  .about {
+    transform: translateY(0);
+    height: auto;
+    font-size: 20px;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__title {
+      font-size: 55px;
+    }
+    &__textbox{
+      width: 100%;
+      height: auto;
+    }
+    &__text {
+      margin: 25px 0px 0px;
+    }
+    &__card-items {
+      width: 83.3%;
+      height: auto;
+      position: static;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 4;
+    }
+  }
+  .card {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 3.16%;
+
+    &__title {
+      // 233px
+      width: 64.36%;
+      padding: 20px 0px 0px;
+      height: 75px;
+      font-size: 25px;
+      line-height: 0.8em;
+    }
+    &__text {
+      width: 85.5%;
+      font-size: 20px;
+      line-height: 0.9em;
+    }
+    &__link {
+      margin: 12% 0% 12% 16.25%;
+    }
+  }
+  .products {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    &__title {
+      font-size: 42px;
+      width: auto;
+      padding-top: 220px;
+      margin: 0 auto 80px;
+    }
+    &__card-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      margin: 0px 0px 10px;
+      z-index: 5;
+    }
+    &__card {
+      width: 360px;
+      padding: 11px 17px 0px;
+      margin-right: 0;
+      margin-bottom: 10px;
+      transition: 0.2s;
+    }
+    &__card-title {
+      margin-top: 80px;
+      font-size: 35px;
+    }
+  }
+  .partners {
+    &__title {
+      font-size: 65px;
+    }
+    &__card-items {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 20px;
+    }
+    &__card {
+      margin-right: 20px;
+    }
+  }
+}
+@media (max-width:768px){
+  .header{
+    &__managebox {
+      right: 25px;
+    }
+    &__menu-btn {
+      height: 25px;
+      width: 25px;
+    }
+    &__wrapper {
+      left: 10px;
+      width: 30px;
+    }
+  }
+  .phone-number {
+    height: auto;
+    font-size: 18px;
+    line-height: 1em;
+    padding-right: 15px;
+  }
+  .languages{
+    bottom: -40px;
+    height: 32px;
+    &__item{
+      font-size: 13px;
+    }
+  }
+  .header__phone{
+    height: 30px;
+    width: 30px;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .header__mail{
+    height: 30px;
+    width: 30px;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .menu{
+    width: 100%;
+    &__btn{
+      right: 25px;
+      height: 25px;
+      width: 25px;
+      background-position: center center;
+      background-size: 100% 100%;
+    }
+    &__list{
+      font-size: 18px;
+      margin: 35px auto 0;
+    }
+  }
+  .about {
+    height: auto;
+    font-size: 18px;
+    &__title {
+      font-size: 45px;
+    }
+  }
+  .products {
+    &__title {
+      font-size: 40px;
+      width: auto;
+      padding-top: 180px;
+      margin: 0 auto 60px;
+    }
+  }
+  .partners {
+    height: auto;
+    width: 100%;
+    padding: 50px 0px;
+    &__title {
+      font-size: 50px;
+    }
+    &__card-items {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+      margin: 20px 0px;
+    }
+    &__card {
+      width: 265px;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+}
+@media (max-width:576px){
+  .about {
+    width: 100%;
+    font-size: 16px;
+    &__title {
+      font-size: 40px;
+    }
+    &__text {
+      margin: 25px 0px 0px;
+    }
+  }
+  .products {
+    &__title {
+      font-size: 37px;
+      width: auto;
+      padding-top: 140px;
+      margin: 0 auto 50px;
+    }
+  }
+}
+@media (max-width:360px){
+  .products {
+    &__title {
+      font-size: 30px;
+      width: auto;
+      padding-top: 85px;
+      margin: 0 auto 40px;
+    }
+    &__card {
+      width: 300px;
+      padding: 11px 17px 0px;
+      margin-right: 0;
+      margin-bottom: 10px;
+      transition: 0.2s;
+    }
+    &__card-title {
+      margin-top: 80px;
+      font-size: 30px;
+    }
+  }
+  .partners {
+    &__title {
+      font-size: 45px;
+    }
+    &__link {
+      font-size: 23px;
+    }
+  }
 }

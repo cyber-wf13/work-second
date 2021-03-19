@@ -86,6 +86,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 8;
   }
   &__menu-btn {
     border: none;
@@ -109,7 +110,7 @@ li {
       background-color: #fff;
       position: absolute;
       top: 0;
-      bottom: 20%;
+      bottom: 25%;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -120,11 +121,15 @@ li {
     left: 50px;
     height: 100%;
     width: 40px;
+    z-index: 8;
   }
   &__logo {
     width: 100%;
     height: auto;
-    margin: 120px auto 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
   }
 }
 .menu{
@@ -186,7 +191,7 @@ li {
 .languages {
   position: absolute;
   bottom: -68px;
-  right: 13px;
+  right: 3px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -246,13 +251,12 @@ li {
     color: $accentText;
   }
   &__text {
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     margin-top: 40px;
     margin-bottom: 15px;
     color: #fff;
+  }
+  &__inner-text{
+    padding: 10px 0px;
   }
   &__img {
     height: 835px;
@@ -406,7 +410,6 @@ li {
     // 1165px
     width: 80.9%;
     display: flex;
-    flex-wrap: wrap;
   }
   &__card {
     display: inline-block;
