@@ -54,6 +54,11 @@
     }
   }
 }
+@media (max-width: 1020px){
+  .formbox{
+    width: 90%;
+  }
+}
 @media (max-width: 992px){
   .header{
     &__managebox {
@@ -196,6 +201,53 @@
       margin-right: 20px;
     }
   }
+  .formbox{
+    &__textbox{
+      width: 350px;
+      height: 455px;
+    }
+    &__title{
+      font-size: 36px;
+    }
+    &__text{
+      font-size: 16px;
+      padding-top: 40px;
+      padding-bottom: 70px;
+    }
+    &__under-text{
+      font-size: 14px;
+    }
+  }
+  .form{
+    height: 325px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__contactbox{
+      top: 80px;
+      right: 70px;
+      width: 105px;
+    }
+    &__link{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+    }
+    &__link-img{
+      display: block;
+      margin: 0 auto;
+    }
+    &__input{
+      font-size: 20px;
+    }
+    &__sumbit{
+      height: 40px;
+      width: 180px;
+      font-size: 26px;
+      padding-bottom: 8px;
+    }
+  }
 }
 @media (max-width:768px){
   .header{
@@ -290,6 +342,174 @@
       margin: 0px 0px 10px 0px;
     }
   }
+  .cook {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: -600px center;
+    &__container {
+      padding-right: 0;
+    }
+    &__textbox {
+      display: inline-block;
+      width: 99%;
+      height: auto;
+      padding: 10px 0px 0px 10px;
+    }
+    &__title {
+      font-size: 70px;
+      text-align: center;
+    }
+    &__text {
+      font-size: 16px;
+      padding: 20px 10px 40px;
+    }
+    &__link{
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+    }
+    &__card-items {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__card{
+      margin-bottom: 20px;
+    }
+    &__card-textbox {
+      padding-left: 35px;
+      &:before {
+        left: 0px;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+      }
+    }
+  
+  }
+  .form-page{
+    height: auto;
+    width: 100%;
+    padding: 197px 0px 30px;
+    
+  }
+  .formbox{
+    position: relative;
+    height: auto;
+    // 1135px
+    // width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &__textbox{
+      width: 90%;
+      height: auto;
+      padding: 20px;
+    }
+    &__title{
+      font-size: 36px;
+      text-align: center;
+    }
+    &__text{
+      font-size: 16px;
+      padding: 30px 50px;
+    }
+    &__under-text{
+      font-size: 12px;
+      padding: 20px 10px;
+    }
+  }
+  .form{
+    height: 325px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &__contactbox{
+      top: auto;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+      width: 90%;
+    }
+    &__link{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+    }
+    &__link-img{
+      display: block;
+      margin: 0 auto;
+    }
+    &__input{
+      font-size: 22px;
+      width: 80%;
+    }
+    &__sumbit{
+      height: 40px;
+      width: 180px;
+      font-size: 26px;
+      padding-bottom: 8px;
+    }
+  }
+  .footer{
+    position: relative;
+    height: 380px;
+    width: 100%;
+    &__logo{
+      // 305px
+      // height: 52.58%;
+      width: 100%;
+    }
+    &__content{
+      position: absolute;
+      top: 130px;
+      // 1135px
+      width: 78.81%;
+      height: auto;
+      margin: 0 12% 25px;
+    }
+    &__list{
+      height: auto;
+      font-size: 18px;
+    }
+    &__list-item{
+      padding: 5px 0px;
+    }
+    &__social{
+      height: 130px;
+      width: 30px;
+    }
+    &__social-img{
+      height: 30px;
+      width: 30px;
+    }
+  }
+  .copyright{
+    position: absolute;
+    bottom: 0;
+    background-color: #1A242E;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    &__link{
+      display: block;
+      font-family: 'PTSans-Regular', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1em;
+      width: 90%;
+      margin: 10px auto;
+      color: rgba(#F8F8F8, 0.5);
+    }
+  }
 }
 @media (max-width:576px){
   .about {
@@ -308,6 +528,34 @@
       width: auto;
       padding-top: 140px;
       margin: 0 auto 50px;
+    }
+  }
+  .cook{
+    background-position: -680px center;
+    &__title {
+      font-size: 65px;
+    }
+    &__text {
+      font-size: 14px;
+      padding: 10px 5px 40px;
+    }
+  }
+  .form{
+    &__link-img{
+      display: block;
+      margin: 0 auto;
+      height: 25px;
+      width: 25px;
+    }
+  }
+  .formbox{
+    &__text{
+      font-size: 16px;
+      padding: 30px 10px;
+    }
+    &__under-text{
+      font-size: 12px;
+      padding: 20px 10px;
     }
   }
 }
@@ -337,6 +585,28 @@
     }
     &__link {
       font-size: 23px;
+    }
+  }
+  .cook{
+    background-position: -720px center;
+    &__card-head{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__card-img {
+      height: auto;
+      width: 300px;
+    }
+    &__card-title {
+      font-size: 30px;
+    }
+    &__card-btn{
+      height: 25px;
+      width: 25px;
+    }
+    &__contactbox{
+      width: 100%;
     }
   }
 }
