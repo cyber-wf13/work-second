@@ -643,21 +643,25 @@ li {
   position: relative;
   height: 580px;
   width: 100%;
-  background-image: url('../images/footer-bg.png');
+  // background-image: url('../images/footer-bg.png');
+  background: url('../images/footer-logo.png'), url('../images/footer-bg.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  &__logo{
-    // 305px
-    // height: 52.58%;
-    width: 100%;
-  }
+  background-size: 100% auto, 100% 100%;
+  background-position:top center, 0 0;
+  padding: 235px 0px 0px;
+  // &__logo{
+  //   // 305px
+  //   // height: 52.58%;
+  //   width: 100%;
+  // }
   &__content{
-    position: absolute;
-    top: 235px;
+    // position: absolute;
+    // top: 235px;
     // 1135px
     width: 78.81%;
     height: 245px;
-    margin: 0 12% 25px;
+    margin: 0 auto;
+    // margin: 0 12% 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;

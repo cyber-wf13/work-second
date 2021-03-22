@@ -475,18 +475,19 @@
     position: relative;
     height: 380px;
     width: 100%;
-    &__logo{
-      // 305px
-      // height: 52.58%;
-      width: 100%;
-    }
+    padding: 115px 0px 0px;
+    // &__logo{
+    //   // 305px
+    //   // height: 52.58%;
+    //   width: 100%;
+    // }
     &__content{
-      position: absolute;
-      top: 130px;
+      // position: absolute;
+      // top: 130px;
       // 1135px
       width: 78.81%;
       height: auto;
-      margin: 0 12% 25px;
+      // margin: 0 12% 25px;
     }
     &__list{
       height: auto;
